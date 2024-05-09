@@ -11,7 +11,16 @@ namespace LoanSystem.System.Models
             Loans = LoanService.LoanService.PossibilitiesOfLoans(request);
         }
 
+        public Response(string customer, List<Loan> loans)
+        {
+            Customer = customer;
+            Loans = loans;
+        }
 
+        public Response()
+        {
+            
+        }
         public string Customer { get; set; }
         public List<Loan> Loans { get; set; }
 

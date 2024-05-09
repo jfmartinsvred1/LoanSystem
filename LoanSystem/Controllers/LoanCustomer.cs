@@ -10,8 +10,7 @@ namespace LoanSystem.Controllers
         [HttpPost]
         public IActionResult PossibilitiesOfLoans(Request request)
         {
-            var response = new Response(request);
-            return Ok(response);
+            return Ok(new Response(request));
         }
     }
 }

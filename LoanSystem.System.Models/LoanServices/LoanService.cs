@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LoanSystem.System.Models.LoanService
 {
-    static class LoanService
+    public static class LoanService
     {
         public static List<Loan> PossibilitiesOfLoans(Request request)
         {
